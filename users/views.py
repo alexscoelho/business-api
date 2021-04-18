@@ -23,7 +23,7 @@ def simple_html_view(request):
 @renderer_classes([JSONRenderer, r.CSVRenderer ])
 def list_users(request):
     """
-    A view that can return JSON or HTML representations
+    A view that can return JSON or CSV representations
     of the users in the system.
     """
     queryset = User.objects.all()
